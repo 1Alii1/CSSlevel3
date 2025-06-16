@@ -1,0 +1,72 @@
+/* General reset and setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111; /* Dark background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  background-color: black; /* Light background */
+  border-radius: 30px;
+  padding: 20px 40px;
+  gap: 50px;
+  box-shadow: 0 8px 20px white;
+}
+
+/* Navigation items */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white; /* Icon & label color */
+  transition: all 0.3s ease;
+}
+
+.nav-item i {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.nav-item span {
+  font-size: 14px;
+}
+
+/* Hover effect */
+.nav-item:hover {
+  transform: translateY(-5px);
+  color: #721010;
+  text-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+.nav-item:hover i {
+  color: #721010;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 15px 20px;
+  }
+
+  .nav-item i {
+    font-size: 22px;
+  }
+
+  .nav-item span {
+    font-size: 12px;
+  }
+}
